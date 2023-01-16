@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "types": [
+      "node",
+      "jest",
+      // "jquery",
+      // "moment",
+      // "puppeteer",
+      // "bluebird",
+      // "bull",
+      // "lodash"
+    ],
+    "pretty": true,
+    "target": "es6",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "allowJs": true,
+    // "paths": {
+    //   "@src/*": ["./*"],
+    //   "zeals-protobuf/*": ["../protobuf/zeals/node/*"]
+    // }
+  },
+  "include": [
+    "src/*.ts",
+    "tests/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
