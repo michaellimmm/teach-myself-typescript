@@ -4,7 +4,7 @@
     "moduleResolution": "node",
     "types": [
       "node",
-      "jest",
+      "jest"
       // "jquery",
       // "moment",
       // "puppeteer",
@@ -20,17 +20,12 @@
     "declaration": true,
     "sourceMap": true,
     "baseUrl": "./src",
-    "allowJs": true,
+    "allowJs": true
     // "paths": {
     //   "@src/*": ["./*"],
     //   "zeals-protobuf/*": ["../protobuf/zeals/node/*"]
     // }
   },
-  "include": [
-    "src/*.ts",
-    "tests/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/*.ts", "tests/*.ts"],
+  "exclude": ["node_modules"]
 }

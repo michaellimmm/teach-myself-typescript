@@ -1,21 +1,25 @@
 # Teach Myself Typescript
 
 ## Project Setup
+
 Setup Typescript project
-```    
+
+```
     tsc --init
 ```
 
 Init yarn project
+
 ```
 yarn init
 ```
 
 ## Project Structure
+
 teach-myself-typescript\
-|--  dist/\
-|--  src/\
-|--  tests/\
+|-- dist/\
+|-- src/\
+|-- tests/\
 .eslintrc.cjs\
 .gitignore\
 jest.config.js\
@@ -24,12 +28,15 @@ tsconfig.json\
 yarn.lock
 
 ## Install Jest
+
 Install test library as development dependency
+
 ```
 yarn add -D jest @types/jest ts-jest
 ```
 
 Add jest configuration called `jest.config.js` on root of project
+
 ```
 /** @type {import('jest').Config} */
 const config = {
@@ -45,12 +52,15 @@ module.exports = config;
 ```
 
 ## Install typescript eslint
+
 Install typescript eslint command
+
 ```
 yarn add --dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
 ```
 
 create `.eslintrc.cjs` config file in the root of project
+
 ```
 module.exports = {
     root: true,
@@ -118,3 +128,22 @@ module.exports = {
 ```
 
 ## Install Prettier
+Install Prettier command
+```
+yarn add --dev --exact prettier
+```
+
+create prettier config `.prettierrc.json` on root of project.
+```
+{
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "useTabs": false
+}
+```
+create a `.prettierignore` file to let the Prettier CLI and editors know which files to not format.
+```
+dist
+```
