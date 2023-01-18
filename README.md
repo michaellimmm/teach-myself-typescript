@@ -5,7 +5,7 @@
 Setup Typescript project
 
 ```
-    tsc --init
+tsc --init
 ```
 
 Init yarn project
@@ -143,6 +143,7 @@ create prettier config `.prettierrc.json` on root of project.
   "useTabs": false
 }
 ```
+
 create a `.prettierignore` file to let the Prettier CLI and editors know which files to not format.
 ```
 dist
