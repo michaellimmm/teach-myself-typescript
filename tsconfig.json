@@ -5,12 +5,6 @@
     "types": [
       "node",
       "jest"
-      // "jquery",
-      // "moment",
-      // "puppeteer",
-      // "bluebird",
-      // "bull",
-      // "lodash"
     ],
     "pretty": true,
     "target": "es6",
@@ -20,12 +14,13 @@
     "declaration": true,
     "sourceMap": true,
     "baseUrl": "./src",
-    "allowJs": true
-    // "paths": {
-    //   "@src/*": ["./*"],
-    //   "zeals-protobuf/*": ["../protobuf/zeals/node/*"]
-    // }
+    "allowJs": true,
+    "paths": {
+      "@src/*": ["./*"],
+    },
+    "noImplicitAny": true,
+    "strictNullChecks": true,
   },
-  "include": ["src/*.ts", "tests/*.ts"],
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
   "exclude": ["node_modules"]
 }
