@@ -1,4 +1,4 @@
-import { Stack } from 'generic/stack';
+import { Stack } from '@src/basics/stack';
 
 describe('Stack', function () {
   it('should stack data to stack', function () {
