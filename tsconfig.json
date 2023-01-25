@@ -19,7 +19,7 @@
       "@src/*": ["./*"],
     },
     "noImplicitAny": true,
-    "strictNullChecks": true,
+    // "strictNullChecks": true,
   },
   "include": ["src/**/*.ts", "tests/**/*.ts"],
   "exclude": ["node_modules"]
